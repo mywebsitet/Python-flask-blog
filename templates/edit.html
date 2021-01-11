@@ -1,0 +1,48 @@
+{% extends "adminlayout.html" %}
+{% block body %}
+<style>
+.top{
+    padding-top: 5%;
+}
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  padding-top: 1%;
+  padding-left : 21%;
+  padding-right: 21%;
+  
+}
+
+</style>
+<header class="masthead" style="background-image: url('  {{ url_for('static', filename='img/home-bg.jpg') }}   ')">
+<form action="/edit/{{sno}}" method = "post" enctype="multipart/form-data">
+    <div class = "w-100">
+        <div class="row align-items-center justify-content-center top">
+            <div class="w-50 ">
+            
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label fs-1 fw-bolder">Title:</label>
+                    <input type="text" class="form-control" id="title" name="title" value="{{ post.title}} " >
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Slug:</label>
+                    <input type="text" class="form-control" id="slug" name = "slug" value="{{ post.slug }} ">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Content:</label>
+                    <textarea class="form-control" id="content" name="content" rows="3">{{ post.content}} </textarea>
+                </div>
+                <div class="mb-3">
+                    
+                    <input type="file" class="form-control" id="img_file" name = "img_file" value="{{ post.img_file}} ">
+                </div>
+                <div class = "vertical-center">
+                    <button type="submit" class="btn btn-success">Success</button>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</form>
+{% endblock %}
+</header>

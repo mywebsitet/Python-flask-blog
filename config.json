@@ -1,0 +1,21 @@
+{
+    "params": {
+        "local_server": "True",
+        "local_uri": "mysql://root:@localhost/codingthunder",
+        "prod_uri": "mysql://root:@localhost/codingthunder",
+        "blog_name": "My Blog Site",
+        "fb_url": "https://facebook.com/codingthunder",
+        "tw_url": "https://twitter.com/codingthunder",
+        "gh_url": "https://github.com/codingthunder",
+        "gmail-user": "enter email id",
+        "gmail-password": "enter password",
+        "no_of_post": "2",
+        "admintext": "Admin Panale",
+        "upload_path": "C:\\Users\\SUBHAM\\Desktop\\flast-tu\\static\\img",
+        "username": "subham",
+        "password": "subham",
+        "about_text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur"
+    }
+
+
+}
